@@ -184,3 +184,82 @@ nav .fa-plus{
   width: 100%;
   height: 90px;
 }
+
+.player .flex:first-child img{
+  margin-right: 20px;
+}
+
+.player .container{
+  height: 100%;
+  align-items: center;
+}
+
+.player i{
+  color: #ffffff;
+  padding: 0 15px;
+  opacity: 0.5;
+}
+
+.player svg{
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.player i:hover, .player svg:hover{
+  opacity: 1;
+}
+
+.player .gap{
+  padding: 0 2rem;
+}
+
+.player .flex_vertical{
+  width: 100%;
+}
+
+.player .flex_vertical .flex{
+  width: 100%;
+  justify-content: center;
+}
+
+.player .flex_vertical .flex .fa-play-circle{
+  font-size: 25px;
+}
+
+.player .bar{
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 90%;
+  margin: 0px 8px;
+}
+
+.player .flex_vertical .flex:last-child{
+  margin-top: 10px;
+}
+
+.player .control{
+  justify-content: flex-end;
+}
+
+.player .control i{
+  padding: 0 8px;
+}
+
+.player .volbar{
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100px;
+  border-radius: 5px;
+}
+
+.player .volbar div{
+  width: 100%;
+  background-color: #ffffff;
+  height: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player .volume:hover .volbar div{
+  background-color: #1ed760;
+}
