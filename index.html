@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="assets/css/flex_framework.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -11,18 +12,68 @@
 
     <div class="container">
 
+        <!-- NAVBAR -->
+
       <div class="navbar">
-        <p>ciao</p>
+        <nav class="flex_vertical">
+
+          <div class="home flex_vertical">
+            <img src="assets\img\logo.svg" alt="" width="75%" id="logo">
+            <div class="flex center" id="green">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </div>
+            <div class="flex center">
+              <i class="fas fa-search"></i>
+              <span>Cerca</span>
+            </div>
+            <div class="flex center">
+              <img src="assets\img\lib.svg" alt="" width="25px">
+              <span>La tua libreria</span>
+            </div>
+          </div>
+
+          <div class="playlist flex_vertical cl_wt">
+            <h5>PLAYLIST</h5>
+            <div class="flex center">
+              <i class="fas fa-plus"></i>
+              <span>Crea playlist</span>
+            </div>
+            <div class="list flex_vertical">
+              <a href="#"><p>Hardcore hip hop</p></a>
+              <a href="#"><p>Discovery Weekly</p></a>
+              <a href="#"><p>Adrenaline Workout</p></a>
+              <a href="#"><p>Tomorroland Official</p></a>
+              <a href="#"><p>i miei brani di Shazam</p></a>
+              <a href="#"><p>Rap Italinao Game Over</p></a>
+            </div>
+          </div>
+
+          <div class="account flex_vertical">
+              <a href="#" class="flex center">
+                <i class="far fa-arrow-alt-circle-down"></i>
+                <span>install app</span>
+              </a>
+              <a href="#" class="flex center">
+                <i class="far fa-user"></i>
+                <span>prime_99</span>
+              </a>
+          </div>
+        </nav>
       </div>
+
+        <!-- MAIN -->
 
       <div class="main">
         <p>ciao</p>
       </div>
 
+        <!-- PLAYER -->
+
       <div class="player">
         <p>ciao</p>
       </div>
-      
+
     </div>
 
   </body>

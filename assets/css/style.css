@@ -1,17 +1,186 @@
+
+
+/* SCROLLBAR */
+
+  /* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5);
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* GENERAL */
+
+*{
+  font-family: sans-serif;
+}
+
+.cl_wt{
+  color: #ffffff;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex_vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.center{
+  align-items: center;
+}
+
+/* NAVBAR */
+
 .navbar{
-  background-color: green;   /* DEBUG:  */
+  background-image: linear-gradient(to right bottom, rgb(18, 18, 18), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   width: 230px;
   height: calc(100vh - 90px);
 }
 
+nav{
+  height: 100%;
+  overflow-y: auto;
+}
+
+nav i{
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+nav span{
+  color: #ffffff;
+}
+
+nav .fa-plus{
+  color: #000000;
+  background-color: #ffffff;
+  padding: 5px;
+}
+
+.home{
+  height: calc((100vh - 90px)/3.5);
+  min-height: 200px;
+}
+
+.home #logo{
+  padding: 20px 25px 0 25px;
+}
+
+.home .center{
+  opacity: 0.5;
+  padding: 0 25px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.home .center:hover{
+  opacity: 1;
+}
+
+.home #green{
+  opacity: 1;
+  padding: 0 18px;
+  border-left: 5px solid #1ed760;
+}
+
+.home .center span{
+  margin-left: 15px;
+}
+
+.playlist{
+  padding: 0 25px;
+  height: 50vh;
+  min-height: 375px;
+}
+
+.playlist h5{
+  padding: 20px 0 15px 0;
+  opacity: 0.5;
+}
+
+.playlist a{
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.playlist a:hover{
+  opacity: 1;
+}
+
+.playlist .list{
+  margin-top: 13px;
+}
+
+.playlist .center{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.playlist .center:hover{
+  opacity: 1;
+}
+
+.playlist .center span{
+  margin-left: 15px;
+}
+
+.account{
+  padding: 0 25px;
+  height: calc((100vh - 90px)/7);
+  min-height: 50px;
+  justify-content: flex-end;
+}
+
+.account a{
+  text-decoration: none;
+}
+
+.account .flex:first-child{
+  padding-bottom: 8px;
+  opacity: 0.5;
+}
+
+.account .flex:last-child{
+  padding: 8px 0 12px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 1;
+}
+
+.account .center span{
+  margin-left: 15px;
+}
+
+/* MAIN */
+
 .main{
-  background-color: blue;   /* DEBUG:  */
+  background-image: linear-gradient(to right bottom, rgb(124, 29, 32), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
 }
 
+/* PLAYER */
+
 .player{
-  background-color: red;   /* DEBUG:  */
+  background-color: #282828;
   width: 100%;
   height: 90px;
 }
