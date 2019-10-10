@@ -1,0 +1,17 @@
+.navbar{
+  background-color: green;   /* DEBUG:  */
+  width: 230px;
+  height: calc(100vh - 90px);
+}
+
+.main{
+  background-color: blue;   /* DEBUG:  */
+  width: calc(100% - 230px);
+  height: calc(100vh - 90px);
+}
+
+.player{
+  background-color: red;   /* DEBUG:  */
+  width: 100%;
+  height: 90px;
+}
