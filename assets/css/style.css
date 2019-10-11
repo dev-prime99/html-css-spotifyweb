@@ -169,6 +169,14 @@ nav .fa-plus{
   margin-left: 15px;
 }
 
+.account .fa-arrow-alt-circle-down{
+  font-size: 17px;
+}
+
+.account a:first-child:hover{
+  opacity: 1;
+}
+
 /* MAIN */
 
 .main{
@@ -192,6 +200,24 @@ nav .fa-plus{
 .player .container{
   height: 100%;
   align-items: center;
+}
+
+.player a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.player h5:hover{
+  text-decoration: underline;
+}
+
+.player h6 a{
+  opacity: 0.5;
+}
+
+.player h6 a:hover{
+  text-decoration: underline;
+  opacity: 1;
 }
 
 .player i{
@@ -222,8 +248,12 @@ nav .fa-plus{
   justify-content: center;
 }
 
-.player .flex_vertical .flex .fa-play-circle{
+.player .flex_vertical .flex .fa-pause-circle{
   font-size: 25px;
+}
+
+.player .flex_vertical .flex .fa-pause-circle:hover{
+  font-size: 30px;
 }
 
 .player .bar{
@@ -231,6 +261,19 @@ nav .fa-plus{
   background-color: rgba(0, 0, 0, 0.4);
   width: 90%;
   margin: 0px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.player .bar div{
+  background-color: #ffffff;
+  width: 50%;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.player .bar div:hover{
+  background-color: #1ed760;
 }
 
 .player .flex_vertical .flex:last-child{
@@ -242,7 +285,12 @@ nav .fa-plus{
 }
 
 .player .control i{
-  padding: 0 8px;
+  padding: 0 10px;
+}
+
+.player span{
+  font-size: 12px;
+  opacity: 0.5;
 }
 
 .player .volbar{
