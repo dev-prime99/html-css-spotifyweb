@@ -183,6 +183,144 @@ nav .fa-plus{
   background-image: linear-gradient(to right bottom, rgb(124, 29, 32), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
+  padding: 50px 30px;
+  overflow-y: auto;
+}
+
+.main .margin{
+  margin: 0 auto;
+  max-width: 1480px;
+}
+
+.main ul:first-child{
+  list-style: none;
+  justify-content: center;
+}
+
+.main ul:first-child li{
+  margin: 0 2%;
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.main ul:first-child li a{
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.main ul:first-child li:first-child a{
+  opacity: 1;
+}
+
+.main ul:first-child li a:hover{
+  opacity: 1;
+}
+
+.main ul:first-child li:first-child::after{
+  content: "";
+  height: 2px;
+  background-color: #1db954;
+  width: 30px;
+  position: absolute;
+  display: block;
+  left: 50%;
+  bottom: -5px;
+  margin-left: -15px;
+}
+
+.title_main{
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.title_main h2 a{
+  font-size: 35px;
+  opacity: 1;
+}
+
+.title_main h2 a:hover{
+  padding-bottom: 2px;
+  border-bottom: 1px #ffffff solid;
+}
+
+.title_main a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+.title_main a:hover{
+  opacity: 1;
+}
+
+.song{
+  margin-top: 30px;
+}
+
+.song .column-lg-2{
+  margin: 0 1%;
+}
+
+.song .column-lg-2:first-child{
+  margin: 0 1% 0 0;
+}
+
+.song .column-lg-2:last-child{
+  margin: 0 0 0 1%;
+}
+
+.song a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.song h5{
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.song h6{
+  margin-top: 7px;
+  opacity: 0.5;
+  font-size: 13px;
+}
+
+.song h6:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.song > div > a{
+  position: relative;
+}
+
+.song > div .circle{
+  border-radius: 50%;
+}
+
+.song > div > a .bg_grey{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.65);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+}
+
+.song > div > a .bg_grey i{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song > div > a:hover .bg_grey{
+  visibility: visible;
 }
 
 /* PLAYER */
@@ -285,6 +423,7 @@ nav .fa-plus{
 }
 
 .player .control i{
+  font-size: 13px;
   padding: 0 10px;
 }
 
