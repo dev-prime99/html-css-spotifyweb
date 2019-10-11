@@ -231,6 +231,7 @@ nav .fa-plus{
 }
 
 .title_main{
+  padding: 0 1%;
   margin-top: 60px;
   justify-content: space-between;
 }
@@ -243,6 +244,12 @@ nav .fa-plus{
 .title_main h2 a:hover{
   padding-bottom: 2px;
   border-bottom: 1px #ffffff solid;
+}
+
+.title_main p{
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.5;
 }
 
 .title_main a{
@@ -262,16 +269,16 @@ nav .fa-plus{
 }
 
 .song .column-lg-2{
-  margin: 0 1%;
+  padding: 0 1%;
 }
 
-.song .column-lg-2:first-child{
-  margin: 0 1% 0 0;
-}
+/* .song .column-lg-2:first-child{
+  padding: 0 1% 0 0;
+} */
 
-.song .column-lg-2:last-child{
-  margin: 0 0 0 1%;
-}
+/* .song .column-lg-2:last-child{
+  padding: 0 0 0 1%;
+} */
 
 .song a{
   color: #ffffff;
