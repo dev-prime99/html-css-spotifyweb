@@ -22,6 +22,19 @@
   background: #555;
 }
 
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+  ::-webkit-scrollbar {
+    height: 3px;
+  }
+  .column-md-8{
+    flex-shrink: 0;
+  }
+}
+
+/* /TABLET VERSION */
+
 /* GENERAL */
 
 *{
@@ -45,6 +58,16 @@
   align-items: center;
 }
 
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+  .column-md-8{
+    margin-bottom: 15px;
+  }
+}
+
+/* /TABLET VERSION */
+
 /* NAVBAR */
 
 .navbar{
@@ -53,10 +76,16 @@
   height: calc(100vh - 90px);
 }
 
+@media screen and (max-width: 1049px){
+  .navbar{
+    display: none;
+  }
+}
 nav{
   height: 100%;
   overflow-y: auto;
 }
+
 
 nav i{
   color: #ffffff;
@@ -82,18 +111,18 @@ nav .fa-plus{
   padding: 20px 25px 0 25px;
 }
 
-.home .center{
+nav .home .center{
   opacity: 0.5;
   padding: 0 25px;
   line-height: 45px;
   cursor: pointer;
 }
 
-.home .center:hover{
+nav .home .center:hover{
   opacity: 1;
 }
 
-.home #green{
+.home .green{
   opacity: 1;
   padding: 0 18px;
   border-left: 5px solid #1ed760;
@@ -177,6 +206,100 @@ nav .fa-plus{
   opacity: 1;
 }
 
+/* TABLET NAVBAR */
+
+.nav_tab{
+  padding: 40px 0;
+  background-image: linear-gradient(to right bottom, rgb(18, 18, 18), rgb(0, 0, 0)), linear-gradient(transparent, rgb(0, 0, 0) 70%);
+  width: 230px;
+  height: calc(100vh - 0px);
+}
+
+@media screen and (min-width: 1050px) {
+  .nav_tab{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav_tab{
+    display: none;
+  }
+}
+
+ span{
+  color: #ffffff;
+}
+
+.nav_tab .home .menu .center{
+  opacity: 0.5;
+  padding: 0 25px;
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.nav_tab .home .menu .center:hover{
+  opacity: 1;
+}
+
+.nav_tab .home .menu .green{
+  opacity: 1;
+  padding: 0 18px;
+  border-left: 5px solid #1ed760;
+}
+
+.nav_tab .tab_control{
+  margin: 0 18px;
+}
+
+.nav_tab .tab_control img{
+  margin-bottom: 20px;
+}
+
+.nav_tab .home{
+  height: 100%;
+}
+
+.nav_tab .flex_vertical{
+  justify-content: space-between;
+}
+
+.nav_tab .tab_control > div > div > p > a{
+  color: #ffffff;
+  font-size: 11px;
+  text-decoration: none;
+}
+
+.nav_tab .tab_control > .flex > .flex_vertical{
+  padding-right: 10px;
+}
+
+.tab_music_cotrol .bar{
+  height: 3px;
+  background-color: rgba(124, 124, 124, 0.4);
+  width: 100%;
+  margin: 30px 0 50px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tab_music_cotrol .bar div{
+  background-color: #ffffff;
+  width: 50%;
+  height: 3px;
+  border-radius: 5px;
+}
+
+.keys{
+  font-size: 40px;
+  justify-content: space-between;
+}
+
+.keys i.fa-pause-circle{
+  font-size: 60px;
+}
+
+
 /* MAIN */
 
 .main{
@@ -187,6 +310,17 @@ nav .fa-plus{
   overflow-y: auto;
 }
 
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+  .main{
+    width: calc(100% - 230px);
+    height: calc(100vh - 0px);
+  }
+}
+
+/* /TABLET VERSION */
+
 .main .margin{
   margin: 0 auto;
   max-width: 1480px;
@@ -195,6 +329,12 @@ nav .fa-plus{
 .main ul:first-child{
   list-style: none;
   justify-content: center;
+}
+
+@media screen and (max-width: 1049px){
+  .main ul:first-child, .main ul:first-child li{
+    display: none;
+  }
 }
 
 .main ul:first-child li{
@@ -236,10 +376,26 @@ nav .fa-plus{
   justify-content: space-between;
 }
 
+@media screen and (max-width: 1049px) {
+  .title_main{
+    margin-top: 0px;
+  }
+}
+
 .title_main h2 a{
   font-size: 35px;
   opacity: 1;
 }
+
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+  .main > .margin > section:not(:first-of-type){
+    margin-top: 20px;
+  }
+}
+
+/* /TABLET VERSION */
 
 .title_main h2 a:hover{
   padding-bottom: 2px;
@@ -268,17 +424,19 @@ nav .fa-plus{
   margin-top: 30px;
 }
 
+/* TABLET VERSION */
+
+@media screen and (min-width: 768px) and (max-width: 1049px){
+  .song{
+    overflow-x: auto;
+  }
+}
+
+/* /TABLET VERSION */
+
 .song .column-lg-2{
   padding: 0 1%;
 }
-
-/* .song .column-lg-2:first-child{
-  padding: 0 1% 0 0;
-} */
-
-/* .song .column-lg-2:last-child{
-  padding: 0 0 0 1%;
-} */
 
 .song a{
   color: #ffffff;
@@ -336,6 +494,12 @@ nav .fa-plus{
   background-color: #282828;
   width: 100%;
   height: 90px;
+}
+
+@media screen and (max-width: 1049px){
+  .player{
+    display: none;
+  }
 }
 
 .player .flex:first-child img{

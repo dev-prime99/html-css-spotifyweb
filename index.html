@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
 
-  <script language="JavaScript">
+  <!-- <script language="JavaScript">
     document.oncontextmenu =new Function("return false;")
-  </script>
+  </script> -->
   <body onselectstart="return false">
 
     <div class="container">
@@ -23,7 +23,7 @@
 
           <div class="home flex_vertical">
             <img src="assets\img\logo.svg" alt="" width="75%" id="logo">
-            <div class="flex center" id="green">
+            <div class="flex center green">
               <i class="fas fa-home"></i>
               <span>Home</span>
             </div>
@@ -63,10 +63,59 @@
                 <span>prime_99</span>
               </a>
           </div>
+
         </nav>
       </div>
 
-        <!-- MAIN -->
+      <!-- TABLET NAV -->
+
+      <div class="nav_tab">
+        <div class="home flex_vertical">
+
+          <div class="menu">
+            <div class="flex center green">
+              <i class="fas fa-home cl_wt"></i>
+              <span>Home</span>
+            </div>
+            <div class="flex center cl_wt">
+              <i class="fas fa-search"></i>
+              <span>Cerca</span>
+            </div>
+            <div class="flex center">
+              <img src="assets\img\lib.svg" alt="" width="25px">
+              <span>La tua libreria</span>
+            </div>
+          </div>
+
+          <div class="tab_control flex_vertical">
+
+            <img src="https://i.scdn.co/image/f399b42cc15d7e09ce3bcddf9192874e541b5b95" alt="" width="194px">
+
+            <div class="flex center">
+              <div class="flex_vertical cl_wt">
+                <h3>Sciacqua la Bocca</h3>
+                <p><a href="">Night Skinny</a>, <a href="">Chadia Rodriguez</a></p>
+              </div>
+              <i class="far fa-heart cl_wt"></i>
+            </div>
+
+            <div class="tab_music_cotrol">
+              <div class="bar">
+                <div></div>
+              </div>
+              <div class="keys flex center">
+                <a href="#"><i class="fas fa-step-backward cl_wt"></i></a>
+                <a href="#"><i class="far fa-pause-circle cl_wt"></i></i></a>
+                <a href="#"><i class="fas fa-step-forward cl_wt"></i></a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- MAIN -->
 
       <div class="main gap">
 
@@ -83,7 +132,7 @@
 
           <!-- FIRST ROW -->
 
-          <section>
+          <section class="column-md-12">
             <div class="flex center cl_wt title_main">
               <h2><a href="">Recently played</a></h2>
               <a href=""><span>SEE ALL</span></a>
@@ -91,7 +140,7 @@
 
             <div class="flex song">
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/d3ee097dea286a2f3a78aea1181974dd2675179b" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -100,7 +149,7 @@
                 <a href=""><h6>Chadia Rodriguez</h6></a>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/ab67616d0000b273bb0ed03e5fe80dc69f06d498" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -108,7 +157,7 @@
                 <h5>Putain de M***e Naza</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://seeded-session-images.scdn.co/v1/img/artist/5LHRHt1k9lMyONurDHEdrp/it" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -116,7 +165,7 @@
                 <h5>Tyga Radio</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/0ceed52209039226d19201de77ed2ea104d9c8d1" alt="" width="100%" class="circle">
                   <div class="bg_grey circle"><i class="fas fa-play"></i></div>
@@ -140,7 +189,7 @@
 
             <div class="flex song">
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/e813bf9276ff5721af4cc4726dcd416aea1ccedc" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -149,7 +198,7 @@
                 <a href=""><h6>Gemitaiz</h6></a>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/0c23ae14ab16d6dbbca875cafecc79810421b687" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -158,7 +207,7 @@
                 <a href=""><h6>MamboLosco</h6></a>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/e61e876af005f06a1187e7e37f79214d318ae79d" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -166,7 +215,7 @@
                 <h5>Zona Trap</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://mosaic.scdn.co/300/935a954696df627023054b3fa94c87dbfbab0a39ab67616d0000b273a87ba60d159b6922497265bcab67616d0000b273d85bd6f374b9355d5b817239cde2b2cd9c8d07f98d3db68b9acf856797bc2180" alt="" width="100%" class="circle">
                   <div class="bg_grey circle"><i class="fas fa-play"></i></div>
@@ -174,7 +223,7 @@
                 <h5>Hardcore hip hop</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/08fa8fd87bead35ca4e1fbbd0d70c3ba9ffd642d" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -182,7 +231,7 @@
                 <h5>Hot Hits Italia</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/d73e8af68af6d19e63593df007941f54c35d9468" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -205,7 +254,7 @@
 
             <div class="flex song">
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/ea4109ad345debb39844b961ab2dfe82c20f5358" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -213,7 +262,7 @@
                 <h5>Hit Italine</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/4641acf1a20b2901b2f136b890ef82541faa628d" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -221,7 +270,7 @@
                 <h5>Rap Italia: Battle Royale</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/4e3db0925bc27302c9da993ce01eb979b6722506" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -229,7 +278,7 @@
                 <h5>Raptopia</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/4fa95c240e82381acd54d1b8f0e4fddf2cd39408" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -237,7 +286,7 @@
                 <h5>Rap Motivazionale</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/9960333df04e55615ac59a037eb725a7212bcc78" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -245,7 +294,7 @@
                 <h5>Mezzanotte Chill Rap</h5>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://pl.scdn.co/images/pl/default/da9040b9c00d5def5195f8e49132e267f358894d" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -268,7 +317,7 @@
 
             <div class="flex song">
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/ab67616d00001e02685a640a130b7b36c5ffc5ff" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -277,7 +326,7 @@
                 <a href=""><h6>MACHETE</h6></a>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/ab67616d00001e0282a568fd0ee2837ac243f05e" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
@@ -286,7 +335,7 @@
                 <a href=""><h6>Salmo</h6></a>
               </div>
 
-              <div class="cl_wt flex_vertical center column-lg-2">
+              <div class="cl_wt flex_vertical center column-lg-2 column-md-8">
                 <a href="#" class="flex_vertical center">
                   <img src="https://i.scdn.co/image/ab67616d00001e02e13b947711bdf7598b61dd54" alt="" width="100%">
                   <div class="bg_grey"><i class="fas fa-play"></i></div>
