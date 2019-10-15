@@ -292,6 +292,10 @@ span{
   padding-right: 10px;
 }
 
+.tab_music_cotrol{
+  position: relative;
+}
+
 .tab_music_cotrol .bar{
   height: 3px;
   background-color: rgba(124, 124, 124, 0.4);
@@ -315,6 +319,11 @@ span{
 
 .keys i.fa-pause-circle{
   font-size: 60px;
+}
+
+.nav_tab .tab_music_cotrol .ball{
+  top: 25px;
+  left: 47%;
 }
 
 
@@ -682,9 +691,27 @@ span{
   cursor: pointer;
 }
 
+.player .volume{
+  position: relative;
+}
+
 .player .volume:hover .volbar div{
   background-color: #1ed760;
 }
+
+.ball{
+  height: 15px;
+  width: 15px;
+  background-color: #989898;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.player .volume .ball{
+  top: 2px;
+  right: 0%;
+}
+
 
 /* ALTERNATIVE PLAYER */
 

@@ -9,3 +9,7 @@ document.getElementById('chadia').innerHTML='Chadia Rodriguez';
 document.getElementById('chadia2').innerHTML='Chadia Rodriguez';
 
 document.getElementById('cantanti').innerHTML='Night Skinny, Chadia Rodriguez';
+
+// BLOCK RIGHT CLICK
+
+document.oncontextmenu =new Function("return false;")
