@@ -119,6 +119,7 @@ nav .fa-plus{
 
 .home #logo{
   padding: 20px 25px 0 25px;
+  width: 75%;
 }
 
 nav .home .center{
@@ -214,6 +215,10 @@ nav .home .green{
 
 .account a:first-child:hover{
   opacity: 1;
+}
+
+.album{
+  width: 25px;
 }
 
 /* TABLET NAVBAR */
@@ -326,6 +331,9 @@ span{
   left: 47%;
 }
 
+.logo_nav{
+  width: 194px;
+}
 
 /* MAIN */
 
@@ -335,6 +343,10 @@ span{
   height: calc(100vh - 90px);
   padding: 50px 30px;
   overflow-y: auto;
+}
+
+.copertine{
+  width: 100%;
 }
 
   /* TABLET VERSION */
@@ -577,6 +589,7 @@ span{
 
 .player .flex:first-child img{
   margin-right: 20px;
+  width: 56px;
 }
 
 .player .container{
@@ -771,6 +784,10 @@ span{
 
 .aletnative_player .second .flex_vertical{
   cursor: pointer;
+}
+
+.aletnative_player .second .flex_vertical img{
+  width: 20px;
 }
 
 .aletnative_player .second .flex_vertical:not(:first-of-type){
